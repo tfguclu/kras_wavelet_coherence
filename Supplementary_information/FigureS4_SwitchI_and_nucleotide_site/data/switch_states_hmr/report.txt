@@ -1,0 +1,63 @@
+Switch I / Switch II / Mg states, HMR runs (analysed window 730-9270 ns unless stated)
+
+Fraction of frames in state:
+replica                     namd_3  namd_3_2  namd_3_3
+measure      state                                    
+G60N_gammaO  H-bond          0.470     0.832     0.016
+HB_R68_D92   formed          0.001     0.000     0.000
+SB_E62_K88   formed          0.222     0.184     0.060
+SB_E63_R68   formed          0.041     0.001     0.037
+SB_K16_E63   formed          0.000     0.000     0.000
+SB_K88_D92   formed          0.666     0.676     0.591
+T35OG1_Mg    state 2         0.688     0.749     0.006
+Y32OH_G12CA  Y32 in          0.182     0.151     0.013
+Y32OH_gammaO direct H-bond   0.063     0.002     0.000
+Y71OH_V9CA   Y71 in          0.127     0.315     0.000
+mg_S17       in shell        1.000     1.000     1.000
+mg_T35       in shell        0.688     0.749     0.006
+mg_betaO     in shell        1.000     1.000     1.000
+mg_gammaO    in shell        1.000     1.000     1.000
+
+Medians (A; sw1_phi in rad):
+replica       namd_3  namd_3_2  namd_3_3
+measure                                 
+CA_61_92       11.34     11.12     13.06
+CA_62_92       11.87     11.26     12.26
+CA_62_95       12.62     12.63     12.15
+CA_62_99       13.50     13.94     12.21
+CA_64_95       14.77     12.76     15.12
+G12CA_PG        4.31      4.30      4.28
+G60N_gammaO     3.76      2.81      7.99
+HB_R68_D92      9.64     11.00      8.67
+Q61CD_PG        8.71      7.92      7.79
+SB_E62_K88      9.71      9.62     12.68
+SB_E63_R68      8.31     10.39      8.72
+SB_K16_E63     14.53     15.13     14.71
+SB_K88_D92      2.78      2.78      2.81
+T35OG1_Mg       2.19      2.17     14.98
+Y32OH_G12CA    15.08     14.61     23.45
+Y32OH_gammaO   10.78     10.31     18.56
+Y71OH_V9CA     12.42     11.29     12.24
+mg_S17          2.07      2.07      2.09
+mg_T35          2.19      2.17     14.98
+mg_betaO        1.85      1.85      1.85
+mg_gammaO       1.79      1.78      1.79
+mg_n_shell      4.00      4.00      3.00
+sw1_phi         0.42      0.40      1.08
+
+Mg first shell (protein/GTP O within 2.6 A), fraction of frames with n ligands:
+          frac_n0  frac_n1  frac_n2  frac_n3  frac_n4  frac_n5  frac_n6
+replica                                                                
+namd_3        0.0      0.0      0.0    0.312    0.688      0.0      0.0
+namd_3_2      0.0      0.0      0.0    0.251    0.749      0.0      0.0
+namd_3_3      0.0      0.0      0.0    0.994    0.006      0.0      0.0
+
+Switch I openings (T35 OG1 > 2.6 A from Mg for >= 5 ns), whole run:
+          count     sum     max
+replica                        
+namd_3        1  3382.0  3382.0
+namd_3_2      1  2870.0  2870.0
+namd_3_3      1  9218.0  9218.0
+
+Literature values are references, not cutoffs for this force field: check that a
+measure is bimodal in histograms.png before reading it as two states.

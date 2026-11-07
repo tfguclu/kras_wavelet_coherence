@@ -1,0 +1,10 @@
+observable,count,real,surrogate_mean,surrogate_min,surrogate_max,chance_fraction,n_surrogates
+chi,n_associations,179,133,129,138,0.743,3
+chi,n_ge2_reps,14,5.67,4,7,0.405,3
+chi,n_3_reps,5,0,0,0,0,3
+sasa,n_associations,104,7.67,6,9,0.0737,3
+sasa,n_ge2_reps,25,0,0,0,0,3
+sasa,n_3_reps,7,0,0,0,0,3
+hb,n_associations,67,26.7,21,35,0.398,3
+hb,n_ge2_reps,7,0,0,0,0,3
+hb,n_3_reps,4,0,0,0,0,3

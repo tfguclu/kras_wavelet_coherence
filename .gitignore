@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+wco_hmr/
+**/figure/*.png
+**/figure/*.pdf
+**/figure/*.tif
+**/figure/*.eps
+**/figure/*.svg

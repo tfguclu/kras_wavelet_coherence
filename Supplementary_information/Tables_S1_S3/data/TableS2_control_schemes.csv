@@ -1,0 +1,7 @@
+control_scheme,chi_real,chi_max_control,sasa_real,sasa_max_control,hbond_real,hbond_max_control,core_pairs_reached
+baseline,14,11,25,1,7,1,0
+seam_masked,6-13,7,9-22,1,4-7,1,1 (chi D126-K128)
+relative_offset_ge_1us,8-14,8,9-23,0,2-7,1,0
+shared_chi_offsets,14,8,,,,,0
+smoothing_1s,37,35,46,2,10,2,0
+smoothing_3s,9,6,18,1,7,1,0

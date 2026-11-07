@@ -1,0 +1,7 @@
+band_ns,center_ns,minimum_episode_ns,time_spacing_ns,analyzed_time_per_replica_us
+10-15,12.5,60,2,9.8
+20-30,25,128,4,9.6
+40-60,50,256,8,9.3
+80-120,100,500,10,8.6
+160-240,200,1000,10,7.1
+320-480,400,2000,10,4.2

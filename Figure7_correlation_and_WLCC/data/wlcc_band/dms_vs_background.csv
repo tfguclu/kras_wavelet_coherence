@@ -1,0 +1,4 @@
+observable,dms_units,dms_reproducible,dms_reproducible_not_set_aside,background_units,background_fraction,matched_mean,matched_2p5,matched_97p5,frac_matched_ge_observed,p
+chi,91,0,0,455,0.0,0.0,0.0,0.0,1.0,1.0
+sasa,88,0,0,440,0.0,0.0,0.0,0.0,1.0,1.0
+hb,110,0,0,550,0.005454545454545455,0.6023,0.0,2.0,1.0,1.0

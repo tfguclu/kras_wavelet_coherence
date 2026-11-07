@@ -1,0 +1,4 @@
+observable,real_ge2_masked_min,real_ge2_masked_max,ctrl_ge2_masked_mean,ctrl_ge2_masked_max,real_3_masked_min,ctrl_3_masked_max,sets_ctrl_ge2_reaching_real,real_eligible_fraction,ctrl_eligible_fraction
+chi,8,14,2.745,8,2,1,0,0.7637237762237763,0.754318064741695
+hb,2,7,0.04,1,0,0,0,0.7643589743589743,0.7562005968778992
+sasa,9,23,0.0,0,0,0,0,0.7644485294117647,0.6865482164893929

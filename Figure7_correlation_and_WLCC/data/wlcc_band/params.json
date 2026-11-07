@@ -1,0 +1,42 @@
+{
+ "P": {
+  "mode": "band",
+  "pmin": 80.0,
+  "pmax": 120.0,
+  "order": 4,
+  "window_ns": 500.0,
+  "step_ns": 10.0,
+  "max_lag_ns": 25.0,
+  "lag_step_ns": 1.0,
+  "min_ep_ns": 500.0,
+  "edge_ns": 722.0,
+  "pow_floor": 0.05,
+  "sasa_min_sd": 1.0,
+  "hb_min_trans": 10,
+  "ctrl_seed": 7,
+  "min_shift_ns": 1000.0,
+  "theta_band": 0.75,
+  "hb_occ": [
+   0.05,
+   0.95
+  ],
+  "reps": [
+   "namd_3",
+   "namd_3_2",
+   "namd_3_3"
+  ]
+ },
+ "phash": "de8ea1207dc04189",
+ "inputs": {
+  "indir": "wco_hmr",
+  "coh_chi": "wco_hmr/P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333/residue_pairs.csv",
+  "coh_sasa": "wco_hmr/SASA_P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333_sep3_LR20/edges.csv",
+  "coh_hb": "wco_hmr/HB_P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333_occ0.05-0.95_tr10_pf0.05_da3.2_ang150/hyperedges.csv",
+  "dms": "kras_coupling_edges_full_canonical.csv",
+  "pdb": "wco_hmr/namd_3_2_wrapped.pdb",
+  "n_bg": 5,
+  "bin_A": 2.0,
+  "calib": 2000,
+  "unit_seed": 1
+ }
+}

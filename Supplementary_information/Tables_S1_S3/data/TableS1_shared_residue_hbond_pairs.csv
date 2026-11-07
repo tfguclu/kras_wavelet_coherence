@@ -1,0 +1,3 @@
+hbond_signal_pairs,tested,coherent_ge1_replica,coherent_ge2_replicas,coherent_3_replicas
+shared_residue,266,10,5,4
+no_shared_residue,11515,16,2,0

@@ -1,0 +1,77 @@
+inputs:
+  chi coherent pairs     wco_hmr/P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333/residue_pairs.csv
+  SASA coherent pairs    wco_hmr/SASA_P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333_sep3_LR20/edges.csv
+  H-bond coherent pairs  wco_hmr/HB_P80-120_thr0.75_ep500_ts2_dt1_dec10_dj0.08333_occ0.05-0.95_tr10_pf0.05_da3.2_ang150/hyperedges.csv
+  DMS couplings          kras_coupling_edges_full_canonical.csv
+  distances              wco_hmr/namd_3_2_wrapped.pdb
+10000 frames x 1 ns; 855 windows of 500 ns every 10 ns; lags -50..50 ns; mode broad
+set   background  calib  coherent  dms
+obs                                   
+chi          455   2000       179   91
+hb           550   2000        67  110
+sasa         440   2000       104   88
+signal pairs per replica: chi 5185, sasa 2493, hb 5094
+[real] namd_3 chi: 5185 signal pairs, 26 s
+[real] namd_3 sasa: 2493 signal pairs, 5 s
+[real] namd_3 hb: 5094 signal pairs, 11 s
+[real] namd_3_2 chi: 5185 signal pairs, 27 s
+[real] namd_3_2 sasa: 2493 signal pairs, 5 s
+[real] namd_3_2 hb: 4913 signal pairs, 11 s
+[real] namd_3_3 chi: 5185 signal pairs, 27 s
+[real] namd_3_3 sasa: 2493 signal pairs, 5 s
+[real] namd_3_3 hb: 5101 signal pairs, 11 s
+controls: 20 runs to do (original scheme; sets 1-20; 6000 units; 12 processes)
+[1/20] original control 1: 104 s
+[2/20] original control 2: 104 s
+[3/20] original control 3: 104 s
+[4/20] original control 4: 105 s
+[5/20] original control 5: 106 s
+[6/20] original control 6: 106 s
+[7/20] original control 7: 107 s
+[8/20] original control 8: 107 s
+[9/20] original control 9: 107 s
+[10/20] original control 10: 107 s
+[11/20] original control 11: 110 s
+[12/20] original control 12: 109 s
+[13/20] original control 13: 84 s
+[14/20] original control 14: 84 s
+[15/20] original control 15: 83 s
+[16/20] original control 16: 82 s
+[17/20] original control 17: 82 s
+[18/20] original control 18: 82 s
+[19/20] original control 19: 81 s
+[20/20] original control 20: 80 s
+done, 325 s
+mode broad; window 500.0 ns, step 10.0 ns, lags +-50.0 ns, episode >= 500.0 ns; control sets read: 20
+
+observable    theta     source  theta_derived  theta_calibrated  target_rate  calib_values  calib_rate_at_theta  peak_abs_r_at_theta
+       chi 0.271332 calibrated            NaN          0.271332      0.00091        120000             0.000917             0.520896
+      sasa 0.249308 calibrated            NaN          0.249308      0.00027        120000             0.000275             0.499307
+        hb 0.120394 calibrated            NaN          0.120394      0.00059        120000             0.000592             0.346978
+
+chi: coherent pairs 179; WLCC in >= 2 replicas: 6; of the 14 reproducible coherent pairs, 5 in >= 2 WLCC replicas
+sasa: coherent pairs 104; WLCC in >= 2 replicas: 43; of the 25 reproducible coherent pairs, 21 in >= 2 WLCC replicas
+hb: coherent pairs 67; WLCC in >= 2 replicas: 8; of the 7 reproducible coherent pairs, 6 in >= 2 WLCC replicas
+
+observable  dms_units  dms_reproducible  dms_reproducible_not_set_aside  background_units  background_fraction  matched_mean  matched_2p5  matched_97p5  frac_matched_ge_observed        p
+       chi         91                 0                               0               455             0.002198        0.2003          0.0           1.0                    1.0000 1.000000
+      sasa         88                 5                               1               440             0.011364        0.9843          0.0           3.0                    0.0003 0.000400
+        hb        110                 1                               0               550             0.009091        1.0082          0.0           3.0                    0.6925 0.692531
+
+controls for the DMS units (screened set), as in the manuscript:
+observable    controls  sets  units real_ge1 real_ge2 real_3  ctrl_ge1_mean ctrl_ge1_range  ctrl_ge2_mean ctrl_ge2_range  ctrl_3_max  sets_ge2_reaching_real
+       chi    original    20     91      0-0      0-0    0-0           0.00            0-0            0.0            0-0         0.0                      20
+       chi rel >= 1 us    20     91      0-0      0-0    0-0           0.00            0-0            0.0            0-0         0.0                      20
+       chi seam masked    20     91      0-0      0-0    0-0           0.00            0-0            0.0            0-0         0.0                      20
+      sasa    original    20     88      1-1      1-1    1-1           0.15            0-1            0.0            0-0         0.0                       0
+      sasa rel >= 1 us    20     88      1-1      1-1    1-1           0.00            0-0            0.0            0-0         0.0                       0
+      sasa seam masked    20     88      1-1      0-1    0-1           0.15            0-1            0.0            0-0         0.0                       1
+
+DMS units in >= 2 replicas, with the per-pair control checks:
+ uid  obs label   trait  reps  ctrl_sets  ctrl_k   ctrl_p  set_aside  k_rel_1us  k_seam_masked  k_per_residue
+ 394 sasa 12-60 Binding     2          0     NaN      NaN        NaN        NaN            NaN            NaN
+ 408 sasa 17-32 Binding     2          0     NaN      NaN        NaN        NaN            NaN            NaN
+ 450 sasa 20-40 Binding     3         20     0.0 0.047619        0.0        0.0            0.0            NaN
+ 456 sasa 21-40 Binding     2          0     NaN      NaN        NaN        NaN            NaN            NaN
+ 516 sasa 37-58 Binding     2          0     NaN      NaN        NaN        NaN            NaN            NaN
+ 517   hb 37-58 Binding     2          0     NaN      NaN        NaN        NaN            NaN            NaN

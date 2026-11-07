@@ -1,0 +1,11 @@
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.7
+networkx>=3.0
+Pillow>=10.0
+# analysis from the trajectories
+MDAnalysis>=2.6
+freesasa>=2.2
+# optional: comparison with pycwt (Supplementary_methods_checks/analysis/pycwt_check.py)
+# pycwt

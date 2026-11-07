@@ -1,0 +1,31 @@
+item,1.0,2.0,3.0
+χ  Asp69–Arg102,2,1,0
+χ  Gln99–Arg102,3,2,2
+χ  Arg73–Lys104,0,1,0
+χ  Lys128–Asp132,3,3,3
+χ  Glu3–Asp54,3,3,3
+χ  Met1–Leu52,3,3,2
+χ  Leu52–Asp54,2,3,2
+χ  Asp126–Lys128,3,3,3
+DMS χ  8–40,1,1,0
+DMS χ  21–35,1,1,0
+DMS χ  74–112,1,1,1
+DMS χ  133–137,1,1,1
+SASA  Asp69–Arg102,3,3,3
+SASA  Gly75–Lys104,3,3,3
+SASA  Lys88–Asp92,3,3,3
+SASA  Arg73–Lys104,0,1,1
+SASA  His94–Leu133,3,3,3
+SASA  Val8–Lys16,3,3,2
+SASA  Gly10–Lys16,3,3,3
+SASA  Cys80–Ile93,3,3,3
+DMS SASA  12–60,2,1,1
+DMS SASA  17–32,2,2,2
+DMS SASA  21–40,1,1,0
+HB  Arg102: Asp69 / Gln99,3,3,3
+HB  Arg73: Val103 / Asp105,3,3,3
+HB  Thr144: Asn116 / Gln150,3,3,3
+HB  Lys88: Glu91 / Asp92,3,3,3
+DMS HB  31–40,0,1,0
+DMS HB  32–40,0,1,0
+DMS HB  37–58,1,1,0

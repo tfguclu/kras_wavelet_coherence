@@ -1,0 +1,4 @@
+observable,theta,source,target_rate,calib_sets,calib_values,calib_rate_at_theta
+chi,0.271332,calibrated,0.00091,20,120000,0.000917
+sasa,0.249308,calibrated,0.00027,20,120000,0.000275
+hb,0.120394,calibrated,0.00059,20,120000,0.000592

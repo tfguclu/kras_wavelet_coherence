@@ -1,0 +1,64 @@
+HMR (first 1.5 us) against 2 fs without HMR, 1500 frames at 1 ns
+
+Ratios are vanilla / HMR, medians over signals (1 = same).
+replica_spread_*: typical ratio between two replicas, within one method and across methods.
+If 'between' is close to 'within', the methods differ no more than replicas do.
+
+Timescales (tau_ns: integrated autocorrelation time; rate: H-bond formations per us; sd: SASA SD):
+observable metric  signals  median_ratio_vanilla_over_HMR        ci95  replica_spread_within  replica_spread_between censored_HMR censored_vanilla
+       chi tau_ns      303                          1.081 1.004-1.141                  1.736                   1.725            0                0
+        hb tau_ns      179                          1.050 0.991-1.191                  1.696                   1.629            3                0
+        hb   rate      179                          0.989 0.977-1.005                  1.142                   1.141                              
+      sasa tau_ns      148                          1.077 0.940-1.232                  2.231                   2.199            0                0
+      sasa     sd      148                          0.977 0.963-0.988                  1.125                   1.116                              
+
+Per-signal values compared by correlation over signals (level: chi mean resultant length, SASA mean,
+H-bond occupancy; acf10 / acf100: autocorrelation at 10 and 100 ns):
+observable metric  signals  corr_method_means  mean_abs_diff  replica_corr_within  replica_corr_between
+       chi  acf10      303              0.884         0.0521                0.675                 0.694
+       chi acf100      303              0.685         0.0346                0.262                 0.339
+       chi  level      303              0.953         0.0455                0.836                 0.849
+        hb  acf10      179              0.866         0.0440                  NaN                   NaN
+        hb acf100      179              0.400         0.0385                  NaN                   NaN
+        hb  level      179              0.970         0.0459                0.921                 0.918
+      sasa  acf10      148              0.844         0.0726                0.655                 0.656
+      sasa acf100      148              0.507         0.0732                0.346                 0.282
+      sasa  level      148              0.988         3.5803                0.970                 0.969
+
+Core H-bond pairs:
+ method       rep               pair  occ_first  occ_second  both  both_vs_independent  switches_per_us note
+    HMR    namd_3   R102 (D69 | Q99)      0.049       0.199 0.038                 3.92             12.7     
+    HMR    namd_3  R73 (V103 | D105)      0.133       0.084 0.071                 6.40             13.3     
+    HMR    namd_3 T144 (N116 | Q150)      0.308       0.248 0.000                 0.00             86.0     
+    HMR    namd_3    K88 (E91 | D92)      0.334       0.541 0.109                 0.61            100.7     
+    HMR  namd_3_2   R102 (D69 | Q99)      0.428       0.413 0.335                 1.89             32.0     
+    HMR  namd_3_2  R73 (V103 | D105)      0.149       0.166 0.121                 4.92             13.3     
+    HMR  namd_3_2 T144 (N116 | Q150)      0.285       0.186 0.000                 0.00             71.3     
+    HMR  namd_3_2    K88 (E91 | D92)      0.196       0.735 0.084                 0.58             82.0     
+    HMR  namd_3_3   R102 (D69 | Q99)      0.284       0.333 0.217                 2.30             32.0     
+    HMR  namd_3_3  R73 (V103 | D105)      0.118       0.116 0.093                 6.77             12.0     
+    HMR  namd_3_3 T144 (N116 | Q150)      0.276       0.273 0.000                 0.00             89.3     
+    HMR  namd_3_3    K88 (E91 | D92)      0.238       0.682 0.093                 0.57             89.3     
+vanilla vanilla_1   R102 (D69 | Q99)      0.191       0.273 0.158                 3.03              4.7     
+vanilla vanilla_1  R73 (V103 | D105)      0.163       0.117 0.094                 4.93             20.7     
+vanilla vanilla_1 T144 (N116 | Q150)      0.255       0.327 0.000                 0.00             48.7     
+vanilla vanilla_1    K88 (E91 | D92)      0.101       0.820 0.047                 0.57             40.7     
+vanilla vanilla_2   R102 (D69 | Q99)      0.765       0.655 0.607                 1.21             21.3     
+vanilla vanilla_2  R73 (V103 | D105)      0.141       0.105 0.087                 5.89             12.0     
+vanilla vanilla_2 T144 (N116 | Q150)      0.220       0.275 0.000                 0.00             97.3     
+vanilla vanilla_2    K88 (E91 | D92)      0.168       0.752 0.055                 0.44             54.0     
+vanilla vanilla_3   R102 (D69 | Q99)      0.104       0.250 0.083                 3.18             17.3     
+vanilla vanilla_3  R73 (V103 | D105)      0.095       0.042 0.039                 9.66              5.3     
+vanilla vanilla_3 T144 (N116 | Q150)      0.454       0.204 0.000                 0.00             53.3     
+vanilla vanilla_3    K88 (E91 | D92)      0.339       0.591 0.125                 0.63            106.0     
+
+Spectra: vanilla / HMR power ratio, median over periods in each range:
+  chi    2-10  ns: 0.99
+  chi   10-50  ns: 0.98
+  chi   50-250 ns: 1.02
+  sasa   2-10  ns: 1.05
+  sasa  10-50  ns: 1.00
+  sasa  50-250 ns: 0.96
+  hb     2-10  ns: 1.02
+  hb    10-50  ns: 0.98
+  hb    50-250 ns: 1.00

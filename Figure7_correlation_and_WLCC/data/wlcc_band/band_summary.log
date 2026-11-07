@@ -1,0 +1,15 @@
+mode band; window 500.0 ns, step 10.0 ns, lags +-25.0 ns, episode >= 500.0 ns; control sets read: 20
+
+observable    theta     source  theta_derived  theta_calibrated  target_rate  calib_sets  calib_values  calib_rate_at_theta  peak_abs_r_at_theta
+       chi 0.921287 calibrated           0.75          0.921287      0.00091          20        120000             0.000917             0.959837
+      sasa 0.943841 calibrated           0.75          0.943841      0.00027          20        120000             0.000275             0.971515
+        hb 0.932574 calibrated           0.75          0.932574      0.00059          20        120000             0.000592             0.965699
+
+chi: coherent pairs 179; WLCC in >= 2 replicas: 1; of the 14 reproducible coherent pairs, 1 in >= 2 WLCC replicas
+sasa: coherent pairs 104; WLCC in >= 2 replicas: 2; of the 25 reproducible coherent pairs, 2 in >= 2 WLCC replicas
+hb: coherent pairs 67; WLCC in >= 2 replicas: 3; of the 7 reproducible coherent pairs, 3 in >= 2 WLCC replicas
+
+observable  dms_units  dms_reproducible  dms_reproducible_not_set_aside  background_units  background_fraction  matched_mean  matched_2p5  matched_97p5  frac_matched_ge_observed   p
+       chi         91                 0                               0               455             0.000000        0.0000          0.0           0.0                       1.0 1.0
+      sasa         88                 0                               0               440             0.000000        0.0000          0.0           0.0                       1.0 1.0
+        hb        110                 0                               0               550             0.005455        0.6023          0.0           2.0                       1.0 1.0
