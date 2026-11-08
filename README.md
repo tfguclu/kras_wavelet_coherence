@@ -5,7 +5,7 @@ Code and data behind the figures of
 > Tandac F. Guclu. *Wavelet coherence captures time-resolved coordination at the Switch II–α3 interface of unbound KRAS.* (submitted)
 
 The molecular dynamics trajectories (3 × 10 µs, KRAS4B·GTP·Mg²⁺, NAMD 3.0.1, CHARMM36m, HMR, 1 ns frames), the
-three 1.5 µs runs without HMR and the MoCHI refit of the DMS data are on Zenodo: **https://doi.org/10.5281/zenodo.24052273** (to be added).
+three 1.5 µs runs without HMR and the MoCHI refit of the DMS data are on Zenodo: **https://doi.org/10.5281/zenodo.24052273**.
 
 ## Layout
 
