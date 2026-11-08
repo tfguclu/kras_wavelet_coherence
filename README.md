@@ -2,7 +2,7 @@
 
 Code and data behind the figures of
 
-> Tandac F. Guclu. *Recurrent coordination at the Switch II–α3 interface of unbound KRAS resolved in time by wavelet coherence.* (submitted)
+> Tandac F. Guclu. *Wavelet coherence captures time-resolved coordination at the Switch II–α3 interface of unbound KRAS.* (submitted)
 
 The molecular dynamics trajectories (3 × 10 µs, KRAS4B·GTP·Mg²⁺, NAMD 3.0.1, CHARMM36m, HMR, 1 ns frames), the
 three 1.5 µs runs without HMR and the MoCHI refit of the DMS data are on Zenodo: **DOI: 10.5281/zenodo.XXXXXXX** (to be added).
