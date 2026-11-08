@@ -1,4 +1,4 @@
-# Recurrent coordination at the Switch II–α3 interface of unbound KRAS resolved in time by wavelet coherence
+# Wavelet coherence captures time-resolved coordination at the Switch II–α3 interface of unbound KRAS
 
 Code and data behind the figures of
 
